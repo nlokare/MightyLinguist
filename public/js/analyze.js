@@ -133,6 +133,9 @@ $(document).ready(function () {
     var defaultErrorMsg = 'Error processing the request, please try again later.';
     $error.show();
     $errorMsg.text(error || defaultErrorMsg);
+    setTimeout(function () {
+      $error.hide()
+    }, 5000);
   }
 
   /**
