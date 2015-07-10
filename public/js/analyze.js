@@ -197,7 +197,7 @@ $(document).ready(function () {
     ];
     var div = $('.summary-div');
     div.empty();
-    paragraphs.forEach(function(sentences) {
+    paragraphs.forEach(function (sentences) {
       $('<p></p>').text(sentences.join(' ')).appendTo(div);
     });
   }
